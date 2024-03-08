@@ -1,0 +1,17 @@
+<body>
+  <div class="container">
+      <header>Password Strength Indicator</header>
+      <form action="#">
+          <div class="field">
+            <input type="text" #password (keyup)="passwordChange(password.value)" />
+          </div>
+          <div class="indicator">
+            <span class="weak {{weak ? 'active' : ''}}"></span>
+            <span class="medium {{medium ? 'active' : ''}}"></span>
+            <span class="strong {{strong ? 'active' : ''}}"></span>
+          </div>
+      </form>
+  </div>
+</body>
+
+
